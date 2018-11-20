@@ -7,7 +7,7 @@
     <string name="activityOnStop">(Activity) onStop</string>
     <string name="activityOnDestroy">(Activity) onDestroy</string>
     <string name="fragmentOnAttach">(Fragment) onAttach</string>
-    <string name="fragmentOnCreateFragment">(Fragment) onCreateFragment</string>
+    <string name="fragmentOnCreateFragment">(Fragment) onCreate</string>
     <string name="fragmentOnActivityCreated">(Fragment) onActivityCreated</string>
     <string name="fragmentOnCreateView">(Fragment) onCreateView</string>
     <string name="fragmentOnResume">(Fragment) OnResume</string>
@@ -17,4 +17,5 @@
     <string name="fragmentOnDestroy">(Fragment) onDestroy</string>
     <string name="fragmentOnDestroyView">(Fragment) onDestroyView</string>
     <string name="fragmentOnDetach">(Fragment) onDetach</string>
+    <string name="btnGeri">GERİ</string>
 </resources>

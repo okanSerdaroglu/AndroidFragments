@@ -43,6 +43,8 @@
     <string name="fragment_B_OnDetach">(Fragment B) onDetach</string>
     <string name="fragment_a">Fragment A</string>
     <string name="fragment_b">Fragment B</string>
+    <string name="fragment_A_bulunamadi">Fragment A bulunamadı</string>
+    <string name="fragment_b_bulunamadi">Fragment B Bulunamadı</string>
 
 
 </resources>

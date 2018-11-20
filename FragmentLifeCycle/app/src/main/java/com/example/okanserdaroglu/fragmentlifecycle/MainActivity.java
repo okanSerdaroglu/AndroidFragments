@@ -1,13 +1,18 @@
 package com.example.okanserdaroglu.fragmentlifecycle;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private final String LOG = "LIFE";
+    FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
          *  initialize variables
          *  start backgroud thread
          */
+        manager = getSupportFragmentManager();
+
     }
 
     @Override
@@ -77,14 +84,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addFragmentA(View view) {
+        manager.beginTransaction().
+                add(R.id.container,new FragmentA(),"fragmentA").commit();
     }
 
     public void addFragmentB(View view) {
+        manager.beginTransaction().
+                add(R.id.container,new FragmentB(),"fragmentB").commit();
     }
 
     public void removeFragmentA(View view) {
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragmentA");
+        if (fragmentA != null) {
+            manager.beginTransaction().remove(fragmentA).commit();
+        } else {
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,Toast.LENGTH_LONG).show();
+        }
     }
 
     public void removeFragmentB(View view) {
+        FragmentB fragmentB = (FragmentB) manager.findFragmentByTag("fragmentB");
+        if (fragmentB != null) {
+            manager.beginTransaction().
+                    remove(manager.findFragmentByTag("fragmentB")).commit();
+        }else {
+            Toast.makeText(this,R.string.fragment_b_bulunamadi,Toast.LENGTH_LONG).show();
+        }
     }
 }

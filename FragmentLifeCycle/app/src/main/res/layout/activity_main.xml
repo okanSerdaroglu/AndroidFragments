@@ -4,25 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/appName" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_a"
+            android:onClick="addFragmentA"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_b"
+            android:onClick="addFragmentB"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_a"
+            android:onClick="removeFragmentA"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_b"
+            android:onClick="removeFragmentB"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_margin="8dp"
-        android:layout_height="50dp" />
+        android:layout_height="match_parent" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="8dp"
-        android:text="@string/btnGeri"/>
+
 
 </LinearLayout>

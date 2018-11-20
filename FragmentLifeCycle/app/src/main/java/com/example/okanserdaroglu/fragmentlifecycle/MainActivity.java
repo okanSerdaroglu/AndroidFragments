@@ -13,8 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportFragmentManager().beginTransaction().
-                add(R.id.container,new LifeCycleFragment(),"lifeCycleFragment").commit();
         Log.e(LOG,getString(R.string.activityOnCreate));
         /** must be implemented
          *  call setContentView
@@ -78,4 +76,15 @@ public class MainActivity extends AppCompatActivity {
          */
     }
 
+    public void addFragmentA(View view) {
+    }
+
+    public void addFragmentB(View view) {
+    }
+
+    public void removeFragmentA(View view) {
+    }
+
+    public void removeFragmentB(View view) {
+    }
 }

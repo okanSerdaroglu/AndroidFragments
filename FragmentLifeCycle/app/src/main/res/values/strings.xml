@@ -1,21 +1,48 @@
 <resources>
-    <string name="appName">FragmentLifeCycle</string>
+    <!-- MainActivity lifeCycle -->
     <string name="activityOnCreate">(Activity) onCreate</string>
     <string name="activityOnStart">(Activity) onStart</string>
     <string name="activityOnResume">(Activity) onResume</string>
     <string name="activityOnPause">(Activity) onPause</string>
     <string name="activityOnStop">(Activity) onStop</string>
     <string name="activityOnDestroy">(Activity) onDestroy</string>
-    <string name="fragmentOnAttach">(Fragment) onAttach</string>
-    <string name="fragmentOnCreateFragment">(Fragment) onCreate</string>
-    <string name="fragmentOnActivityCreated">(Fragment) onActivityCreated</string>
-    <string name="fragmentOnCreateView">(Fragment) onCreateView</string>
-    <string name="fragmentOnResume">(Fragment) OnResume</string>
-    <string name="fragmentOnStart">(Fragment) onStart</string>
-    <string name="fragmentOnPause">(Fragment) onPause</string>
-    <string name="fragmentOnStop">(Fragment) onStop</string>
-    <string name="fragmentOnDestroy">(Fragment) onDestroy</string>
-    <string name="fragmentOnDestroyView">(Fragment) onDestroyView</string>
-    <string name="fragmentOnDetach">(Fragment) onDetach</string>
+
+    <!-- MainActivity Views -->
+    <string name="appName">FragmentLifeCycle</string>
     <string name="btnGeri">GERİ</string>
+    <string name="add_a">Add A</string>
+    <string name="add_b">Add B</string>
+    <string name="remove_a">Remove A</string>
+    <string name="remove_b">Remove B</string>
+
+
+    <!-- fragment A -->
+    <string name="fragment_A_OnAttach">(Fragment A) onAttach</string>
+    <string name="fragment_A_OnCreate">(Fragment A) onCreate</string>
+    <string name="fragment_A_OnActivityCreated">(Fragment A) onActivityCreated</string>
+    <string name="fragment_A_OnCreateView">(Fragment A) onCreateView</string>
+    <string name="fragment_A_OnResume">(Fragment A) OnResume</string>
+    <string name="fragment_A_OnStart">(Fragment A) onStart</string>
+    <string name="fragment_A_OnPause">(Fragment A) onPause</string>
+    <string name="fragment_A_OnStop">(Fragment A) onStop</string>
+    <string name="fragment_A_OnDestroy">(Fragment A) onDestroy</string>
+    <string name="fragment_A_OnDestroyView">(Fragment A) onDestroyView</string>
+    <string name="fragment_A_OnDetach">(Fragment A) onDetach</string>
+
+    <!-- fragment B -->
+    <string name="fragment_B_OnAttach">(Fragment B) onAttach</string>
+    <string name="fragment_B_OnCreate">(Fragment B) onCreate</string>
+    <string name="fragment_B_OnActivityCreated">(Fragment B) onActivityCreated</string>
+    <string name="fragment_B_OnCreateView">(Fragment B) onCreateView</string>
+    <string name="fragment_B_OnResume">(Fragment B) OnResume</string>
+    <string name="fragment_B_OnStart">(Fragment B) onStart</string>
+    <string name="fragment_B_OnPause">(Fragment B) onPause</string>
+    <string name="fragment_B_OnStop">(Fragment B) onStop</string>
+    <string name="fragment_B_OnDestroy">(Fragment B) onDestroy</string>
+    <string name="fragment_B_OnDestroyView">(Fragment B) onDestroyView</string>
+    <string name="fragment_B_OnDetach">(Fragment B) onDetach</string>
+    <string name="fragment_a">Fragment A</string>
+    <string name="fragment_b">Fragment B</string>
+
+
 </resources>

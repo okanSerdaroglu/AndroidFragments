@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">FragmentLifeCycle</string>
+    <string name="appName">FragmentLifeCycle</string>
+    <string name="activityOnCreate">(Activity) onCreate</string>
+    <string name="activityOnStart">(Activity) onStart</string>
+    <string name="activityOnResume">(Activity) onResume</string>
+    <string name="activityOnPause">(Activity) onPause</string>
+    <string name="activityOnStop">(Activity) onStop</string>
+    <string name="activityOnDestroy">(Activity) onDestroy</string>
+    <string name="fragmentOnAttach">(Fragment) onAttach</string>
+    <string name="fragmentOnCreateFragment">(Fragment) onCreateFragment</string>
+    <string name="fragmentOnActivityCreated">(Fragment) onActivityCreated</string>
+    <string name="fragmentOnCreateView">(Fragment) onCreateView</string>
+    <string name="fragmentOnResume">(Fragment) OnResume</string>
+    <string name="fragmentOnStart">(Fragment) onStart</string>
+    <string name="fragmentOnPause">(Fragment) onPause</string>
+    <string name="fragmentOnStop">(Fragment) onStop</string>
+    <string name="fragmentOnDestroy">(Fragment) onDestroy</string>
+    <string name="fragmentOnDestroyView">(Fragment) onDestroyView</string>
+    <string name="fragmentOnDetach">(Fragment) onDetach</string>
 </resources>

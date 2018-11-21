@@ -142,6 +142,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showFragmentA(View view) {
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragmentA");
+        if (fragmentA != null ){
+            manager.beginTransaction().show(fragmentA).commit();
+        } else {
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
     public void hideFragmentA(View view) {

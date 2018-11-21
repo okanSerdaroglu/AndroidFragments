@@ -105,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
         if (fragmentA != null) {
             manager.beginTransaction().remove(fragmentA).commit();
         } else {
-            Toast.makeText(this,R.string.fragment_A_bulunamadi,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,
+                    Toast.LENGTH_LONG).show();
         }
     }
 
@@ -115,7 +116,8 @@ public class MainActivity extends AppCompatActivity {
             manager.beginTransaction().
                     remove(manager.findFragmentByTag("fragmentB")).commit();
         }else {
-            Toast.makeText(this,R.string.fragment_b_bulunamadi,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.fragment_b_bulunamadi,
+                    Toast.LENGTH_LONG).show();
         }
     }
 
@@ -124,7 +126,8 @@ public class MainActivity extends AppCompatActivity {
         if (fragmentA != null){
             manager.beginTransaction().attach(fragmentA).commit();
         } else {
-            Toast.makeText(this,R.string.fragment_A_bulunamadi,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,
+                    Toast.LENGTH_LONG).show();
         }
     }
 
@@ -133,7 +136,8 @@ public class MainActivity extends AppCompatActivity {
         if (fragmentA != null){
             manager.beginTransaction().detach(fragmentA).commit();
         } else {
-            Toast.makeText(this,R.string.fragment_A_bulunamadi,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,
+                    Toast.LENGTH_LONG).show();
         }
     }
 
@@ -141,6 +145,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideFragmentA(View view) {
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragmentA");
+        if (fragmentA != null) {
+            manager.beginTransaction().hide(fragmentA).commit();
+        } else {
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
 }

@@ -120,6 +120,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void attachFragmentA(View view) {
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragmentA");
+        if (fragmentA != null){
+            manager.beginTransaction().attach(fragmentA).commit();
+        } else {
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,Toast.LENGTH_LONG).show();
+        }
     }
 
     public void detachFragmentA(View view) {

@@ -93,6 +93,16 @@ public class MainActivity extends AppCompatActivity {
                 add(R.id.container,new FragmentB(),"fragmentB").commit();
     }
 
+    public void replaceWithA(View view) {
+        manager.beginTransaction().
+                replace(R.id.container,new FragmentA(),"fragmentA").commit();
+    }
+
+    public void replaceWithB(View view) {
+         manager.beginTransaction().
+                 replace(R.id.container,new FragmentB(),"fragmentB").commit();
+    }
+
     public void removeFragmentA(View view) {
         FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragmentA");
         if (fragmentA != null) {

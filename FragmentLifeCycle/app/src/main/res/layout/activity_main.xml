@@ -41,6 +41,29 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/replace_with_a"
+            android:onClick="replaceWithA"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/replace_with_b"
+            android:onClick="replaceWithB"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"

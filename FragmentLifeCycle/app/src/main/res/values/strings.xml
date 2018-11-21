@@ -47,6 +47,10 @@
     <string name="fragment_b_bulunamadi">Fragment B Bulunamadı</string>
     <string name="replace_with_a">REPLACE WITH A</string>
     <string name="replace_with_b">REPLACE WITH B</string>
+    <string name="attach_a">ATTACH A</string>
+    <string name="detach_a">DETACH A</string>
+    <string name="show_a">SHOW A</string>
+    <string name="hide_a">HIDE A</string>
 
 
 </resources>

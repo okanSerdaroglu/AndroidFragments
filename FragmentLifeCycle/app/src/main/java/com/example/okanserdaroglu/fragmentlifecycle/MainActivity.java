@@ -1,8 +1,5 @@
 package com.example.okanserdaroglu.fragmentlifecycle;
-
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -121,4 +118,23 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,R.string.fragment_b_bulunamadi,Toast.LENGTH_LONG).show();
         }
     }
+
+    public void attachFragmentA(View view) {
+    }
+
+    public void detachFragmentA(View view) {
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragmentA");
+        if (fragmentA != null){
+            manager.beginTransaction().detach(fragmentA).commit();
+        } else {
+            Toast.makeText(this,R.string.fragment_A_bulunamadi,Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void showFragmentA(View view) {
+    }
+
+    public void hideFragmentA(View view) {
+    }
+
 }
